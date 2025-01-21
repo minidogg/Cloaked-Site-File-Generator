@@ -134,6 +134,10 @@
                             border: none;
                         }
                     </style>
+
+                    <script>
+                        window.addEventListener("beforeunload", (ev)=>{ev.returnValue = "";ev.preventDefault()})
+                    <\/script>
                 </head>
                 <body>
                     <iframe src="${url}"></iframe>
